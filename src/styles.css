@@ -1,0 +1,85 @@
+.container {
+  width: 550px;
+  height: 780px;
+  margin: 20 auto;
+  padding: 20px;
+  border: 1px solid #573ba3;
+  border-radius: 20px;
+  background-image: linear-gradient(to top, #79d1c3, #f0fbff);
+  display: grid;
+}
+
+.search {
+  padding: 8px;
+  position: absolute;
+  top: 55px;
+  margin-left: 95px;
+  width: 200px;
+}
+.col-3 {
+  position: absolute;
+  top: 27px;
+  margin-left: 150px;
+  width: 80px;
+}
+.button {
+  position: absolute;
+  top: 5px;
+  margin-left: 390px;
+  width: 80px;
+}
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 48px;
+  font-weight: 60;
+  color: rgb(23, 20, 184);
+}
+h2 {
+  font-size: 40px;
+  font-weight: 100;
+}
+h3 {
+  font-size: 28px;
+  font-weight: 100;
+}
+h6 {
+  margin-top: 10px;
+  text-align: left;
+  color: rgb(14, 17, 201);
+}
+p {
+  font-family: "Sawarabi Mincho", serif;
+}
+.card {
+  width: 450px;
+  height: 350px;
+  margin: 0 auto;
+  padding: 5px;
+  border-radius: 10px;
+}
+.card-body {
+  position: absolute;
+  top: 20px;
+  left: 220px;
+  margin: 0;
+  padding: 3px;
+}
+.row {
+  text-align: center;
+  font-size: 20px;
+  color: #6f4886;
+}
+.col {
+  font-family: "Catamaran", sans-serif;
+  font-size: 18px;
+  text-align: center;
+}
+img {
+  width: 250px;
+  margin-left: 0px;
+  display: block;
+}
+.footer {
+  text-align: center;
+  font-size: small;
+}
