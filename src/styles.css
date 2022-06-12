@@ -50,6 +50,9 @@ h6 {
 p {
   font-family: "Sawarabi Mincho", serif;
 }
+p::first-letter {
+  text-transform: capitalize;
+}
 .card {
   width: 450px;
   height: 350px;
