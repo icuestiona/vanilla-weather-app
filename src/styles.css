@@ -83,11 +83,19 @@ p::first-letter {
   text-align: center;
 }
 img {
-  width: 250px;
+  width: 180px;
   margin-left: 0px;
+  margin-top: 50px;
   display: block;
 }
 .footer {
   text-align: center;
   font-size: small;
+}
+.active {
+  color: rgb(33, 33, 33);
+  cursor: default;
+}
+.active:hover {
+  text-decoration: none;
 }
