@@ -13,19 +13,19 @@
   padding: 8px;
   position: absolute;
   top: 55px;
-  margin-left: 95px;
+  margin-left: 80px;
   width: 200px;
 }
 .col-3 {
   position: absolute;
-  top: 27px;
-  margin-left: 150px;
+  top: 30px;
+  margin-left: 155px;
   width: 80px;
 }
 .button {
   position: absolute;
-  top: 5px;
-  margin-left: 390px;
+  top: 20px;
+  margin-left: 400px;
   width: 80px;
 }
 h1 {
@@ -50,14 +50,19 @@ h6 {
 p {
   font-family: "Sawarabi Mincho", serif;
 }
+
 p::first-letter {
   text-transform: capitalize;
 }
+
 .card {
   width: 450px;
-  height: 350px;
+  height: 330px;
   margin: 0 auto;
-  padding: 5px;
+  margin-top: 20px;
+  background-color: #fff;
+  padding: 20px;
+
   border-radius: 10px;
 }
 .card-body {
