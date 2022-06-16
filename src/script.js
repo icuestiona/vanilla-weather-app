@@ -81,3 +81,20 @@ fahrenheitLink.addEventListener(`click`, showFahrenheitTemperature);
 
 let celsiusLink = document.querySelector(`#celsius-link`);
 celsiusLink.addEventListener(`click`, showCelsiusTemperature);
+
+function showPosition(position) {
+  let latitude = position.coords.latitude;
+  let longitude = position.coords.longitude;
+  let apiKey = `ec906dafd44a254d26b9dd410c431070`;
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(showTemperature);
+}
+
+function getCurrentLocation(event) {
+  event.preventDefault();
+  navigator.geolocation.getCurrentPosition(showPosition);
+}
+let showCurrentLocation = document.querySelector("#currentSearchButton");
+showCurrentLocation.addEventListener("click", getCurrentLocation);
+
+searchCity("Madrid");
