@@ -21,55 +21,53 @@
     <title>Final-weather-app</title>
   </head>
   <body>
-     <body>
     <div class="box">
-      <div class="container">
-        <h6>Daily weather</h6>
-        <br />
-        <form id="search-form" id="search-form">
-          <div class="row-2">
-            <div class="col-9">
-              <div class="search">
-                <input
-                 type="search"
-                 class="city" 
-                  placeholder="Enter your city here"
-                  id="search-input"
-                  class="form-control"
-                  autofocus="on"
-                  autocomplete="off"
-                />
-              </div>
-                <div class="col-3">
-                  <input
-                    type="submit"
-                    value="search"
-                    class="form-control col-3 btn btn-primary shadow.sm"
-                >
-            </div>
-              </div>
-              <div class="button">
-                  <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                   <button 
-                   type="button"
-                   value="current"
-                   class="form-control col-3 btn btn-light shadow.sm"
-                   id="currentSearchButton"
-                   >Current location</button>
+          <div class="container">
+            <h6>Daily weather</h6>
+            <br />
+            <form id="search-form">
+              <div class="row-2">
+                <div class="col-9">
+                  <div class="search">
+                    <input
+                     type="search"
+                     class="city" 
+                      placeholder="Enter your city here"
+                      id="search-input"
+                      class="form-control"
+                      autofocus="on"
+                      autocomplete="off"
+                    />
+                  </div>
+                    <div class="col-3">
+                      <input
+                        type="submit"
+                        value="search"
+                        class="form-control col-3 btn btn-primary shadow.sm">
                     </div>
               </div>
-              </div>
-          </form>
-     
+            </div>
+              </form>
+                  <div class="button">
+                      <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                       <button 
+                       type="button"
+                       value="current"
+                       class="form-control col-3 btn btn-light shadow.sm"
+                       id="currentSearchButton"
+                       >Current location</button>
+                        </div>
+                  </div>
+                  
         <div class="card mb-3">
           <div class="row g-0">
             <div class="col-md-4">
-              <img 
+                 <img
                 src="http://openweathermap.org/img/wn/02d@4x.png"
                 alt="sunnyday"
                 id="icon"
               />
-            </div>
+           </div>
             <div class="col-md-8">
               <div class="card-body">
                 <h1 id="city">Madrid</h1>
@@ -77,8 +75,8 @@
                 <h2 class="temperature">
                     <span id="temperature">25º</h2></span
                       >
-                <a href="#" id="celsius-link">C</a> |
-                <a href="#" id="fahrenheit-link">F</a>
+                <a href="#" id="celsius-link" class="active">ºC</a> |
+                <a href="#" id="fahrenheit-link">ºF</a>
                 <br />
                 <h3 id ="date-input">Tuesday 16:00</h3>
                 <p id="temp-description">Sunny</p>
@@ -86,7 +84,6 @@
             </div>
           </div>
         </div>
-       
         <div class="row">
           <div class="col-4">
             <strong>Wind</strong>
@@ -137,12 +134,12 @@
           <div class="col">32º/17º</div>
         </div>
       </div>
-      <div class="footer">
-        <div class="coder">
-          <a href="https://github.com/icuestiona/project-example1">Open-source code</a> Soraya Carvajal
-      </div>
+    </div>
+    <div class="footer">
+      <div class="coder">
+        Coded by Soraya Carvajal</a>
     </div>
     <script></script>
-    <script src="src/script.js"></script>
+    <script src="src/index.js"></script>
   </body>
 </html>
