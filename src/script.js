@@ -20,37 +20,25 @@ let days = [
 let day = days[now.getDay()];
 h3.innerHTML = `${day}, ${hours}:${minutes}`;
 
-function convertToFahrenheit(event) {
-  event.preventDefault();
-  let farhElement = document.querySelector(`#temperature`);
-  farhElement.innerHTML = `77º`;
-}
-let fahrenheitLink = document.querySelector(`#fahrenheit-link`);
-fahrenheitLink.addEventListener(`click`, convertToFahrenheit);
-
-function convertToCelsius(event) {
-  event.preventDefault();
-  let celsElement = document.querySelector(`#temperature`);
-  celsElement.innerHTML = `25º`;
-}
-let celsiusLink = document.querySelector(`#celsius-link`);
-celsiusLink.addEventListener(`click`, convertToCelsius);
-
 function showTemperature(response) {
+  let temperatureElement = document.querySelector("#temperature");
+  let cityElement = document.querySelector("#city");
+  let descriptionElement = document.querySelector("#temp-description");
+  let humidityElement = document.querySelector("#humidity");
+  let windElement = document.querySelector("#wind");
   let iconElement = document.querySelector("#icon");
-  document.querySelector("#city").innerHTML = response.data.name;
-  document.querySelector("#temperature").innerHTML = Math.round(
-    response.data.main.temp
-  );
-  document.querySelector("#temp-description").innerHTML =
-    response.data.weather[0].description;
-  document.querySelector("#humidity").innerHTML = response.data.main.humidity;
-  document.querySelector("#wind").innerHTML = Math.round(
-    response.data.wind.speed
-  );
+
+  celsiusTemperature = response.data.main.temp;
+
+  temperatureElement.innerHTML = Math.round(celsiusTemperature);
+  cityElement.innerHTML = response.data.name;
+  descriptionElement.innerHTML = response.data.weather[0].description;
+  humidityElement.innerHTML = response.data.main.humidity;
+  windElement.innerHTML = Math.round(response.data.wind.speed);
+
   iconElement.setAttribute(
     "src",
-    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@4x.png`
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
 }
