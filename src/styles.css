@@ -24,7 +24,7 @@
 }
 .button {
   position: absolute;
-  top: 20px;
+  top: 10px;
   margin-left: 400px;
   width: 80px;
 }
@@ -95,6 +95,7 @@ img {
   display: block;
 }
 .footer {
+  position: absolute;
   margin-top: 50px;
   text-align: center;
   font-size: small;
